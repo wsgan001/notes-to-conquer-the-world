@@ -1,8 +1,8 @@
 ---
-tags: [cs484-parallel-programming, school]
+tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-01-29T17:50:02.573Z'
+modified: '2020-01-29T17:52:23.069Z'
 ---
 
 # CS 484 Parallel Programming 
