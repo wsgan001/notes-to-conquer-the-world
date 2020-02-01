@@ -2,13 +2,13 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-01-29T17:52:23.069Z'
+modified: '2020-01-30T00:49:44.948Z'
 ---
 
 # CS 484 Parallel Programming 
 
 
-## Week 1
+# Week 1
 ### Early History of Computers
 First tubes -> integrated circuits 
 
@@ -44,3 +44,31 @@ First tubes -> integrated circuits
 - 3D stacking memory to increase bandwidth. 
 - cache helps with temporal and spatial locality
 - You can stack caches. L1, L2, and L3. 
+
+
+# Week 2
+
+Quiz
+
+What is/are disadvantages of a long cache line? Both
+
+What is the cache hit ratio? fraq found in mem
+
+
+
+What is the arithmetic intensity in FLOPs/word for the following loop (all variables are double precision floating point numbers): 1
+
+How many load operations happen in each iteration of the following loop: Not 4,5,3
+
+How many cache misses will result from the following code? Assume that N is a multiple of the cache line size w, that the cache is a fully associative LRU cache of size N*w, and that both arrays’ initial addresses are at the start of a cache line. = N^2/w + N/w
+
+Which of the following has better cache performance? Assume that the cache is a fully associative LRU cache of size greater than N*w (where w is the number of words per cache line) and arrays are stored in row major order. i,j
+
+
+
+
+
+
+
+
+
