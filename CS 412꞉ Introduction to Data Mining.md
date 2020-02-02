@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Introduction to Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-01-31T15:53:01.290Z'
+modified: '2020-02-01T19:07:18.386Z'
 ---
 
 # CS 412: Introduction to Data Mining
@@ -32,6 +32,7 @@ Closet+
 
 - 3.2. Interestingness Measures: Lift and χ2
   - Lift: Measure of dependent/correlated events: A measure of the performance of a targeting model (association rule) at predicting or classifying cases as having an enhanced response (with respect to the population as a whole), measured against a random choice targeting model.
+  
   - χ2: A way to test correlated events
 
 
