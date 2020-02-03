@@ -1,0 +1,101 @@
+---
+tags: ['CS 412: Introduction to Data Mining', school]
+title: 'CS 412: Data Mining'
+created: '2020-01-29T17:51:52.498Z'
+modified: '2020-02-03T04:27:51.859Z'
+---
+
+# CS 412: Data Mining
+---
+## Week 1
+
+Notes:
+
+ - The Apriori Algorithm
+https://www.hackerearth.com/blog/developers/beginners-tutorial-apriori-algorithm-data-mining-r-implementation
+Apriori algorithm is a classical algorithm in data mining. It is used for mining frequent itemsets and relevant association rules. It is devised to operate on a database containing a lot of transactions, for instance, items brought by customers in a store.
+
+- Mining Frequent Patterns by Exploring Vertical Data Format
+- FPGrowth
+- Closed Pattern: Lossless compression 
+Closet+
+
+- [Support/Confidence](https://www.quora.com/What-is-support-and-confidence-in-data-mining#)
+
+## Week 2
+
+- 3.1. Limitation of the Support-Confidence Framework
+  - Not all patterns/rules are interesting 
+  - Objective: Support and correlation. 
+  - Subjective: Relevant to users request. 
+  - Data may give wrong results/correlations. 
+
+- 3.2. Interestingness Measures: Lift and χ2
+  - Lift: Measure of dependent/correlated events: A measure of the performance of a targeting model (association rule) at predicting or classifying cases as having an enhanced response (with respect to the population as a whole), measured against a random choice targeting model.
+  
+  - χ2: A way to test correlated events
+  - Formula: https://www.youtube.com/watch?v=ZUGKFoHUHQI and https://www.mathsisfun.com/data/chi-square-test.html
+
+
+- 3.3. Null Invariance Measures
+  - null-invariance: value does not change with the # of null-transactions. 
+  - Can be crucial for analysis of massive transactions. Many transactions may contain neither milk nor coffee. 
+  - Null invariance implies no effect of null transactions on deciding the correlation between variables.
+
+
+- 4.1. Mining Multi-Level Associations
+  - items have hierarchies 
+  - how to set min-support? same for all levels? Levels with lowered reduced. 
+  - if high level support rules derived lower ones, then the lower ones are redundant.
+  - can also group based on items. diamonds, gold, milk. 
+
+- 4.2. Mining Multi-Dimensional Associations
+  - single-dim like items are all products. 
+  - multi-dim like 16-20 buys popcorn buys coke
+  - items with multple categories(gender, profession, role) or numbers(age, size)
+
+- 4.3. Mining Quantitative Associations
+  - Age and salary. 
+  - Can be bined for best results
+  - can be used to mine for intersting data rules. Ex: gender = female => wage: mean=7/hour (overall mean = 9)
+
+- 4.4. Mining Negative Correlations
+  - Rare patterns. Set a low support. Role watches
+  - Nevatige patterns: Unlikely to happen together. Ex. Person buys a Ford (truck) and a Ford Fusion (hybrid) car. 
+  - Lift can be used to define negatively correlated events. Small datasets.
+  - Be careful of null transactions when setting rules. 
+  - Kulczynski can be used to measure negative correlated events. Larger datasets. 
+  
+- 4.5. Mining Compressed Patterns
+  - Many scattered patterns are not useful. 
+  - Use a distance function to measure similarly. 
+  - Create clusters based on distance. 
+  - Close support and item-set. 
+  - The set of transaction for pattern "abcd" is {T1, T3, T4}. The set of transaction for pattern "abde" is {T1, T2, T3}. The distance is calculated as 1-2/4 = 0.5
+  - Redundancy aware Top K Patterns with Maximal Marginal Significance. 
+  
+
+## Quiz 2a
+1. Suppose a school collected some data on students' preference for hot dogs(HD) vs. hamburgers(HM). We have the following 2×2 contingency table summarizing the statistics. If lift is used to measure the correlation between HD and HM, what is the value for lift(HD, HM)? A. 1
+1. Suppose Coursera collected statistics on the number of students who take courses on data mining (DM) and machine learning (ML). We have the following 2×2 contingency table summarizing the statistics. If lift is used to measure the correlation between DM and ML, what is the value for lift(DM, ML)? 7/4
+2. Suppose a school collected some data on students’ preference for hot dogs (HD) vs. hamburgers (HM). We have the following 2×2 contingency table summarizing the statistics. If χ2 is used to measure the correlation between HD and HM, what is the χ2 score? A. 0
+3. What is the value range of the χ2 measure? A. 0 to +infinity
+3. What is the value range of the Kulczynski measure? 0 to 1
+4. Which of the following measures is NOT null invariant? chi squared since they are considered. 
+4. Which of the following measures is NOT null invariant? lyft
+5. <p>χ<sup>2</sup>1 = χ<sup>2</sup>2, c<sub>1</sub>≠ c<sub>2</sub></p>
+5. Suppose we are interested in analyzing the transaction history of several supermarkets with respect to the purchase of apples (A) and bananas (B). We have the following table summarizing the transactions. A. cosine, kulcyzynski,lift
+
+## Quiz 2b
+1. Suppose one needs to frequent patterns at two different levels, with mini-support (minsup) of 5% (higher level) and 3% (lower level), respectively. If using shared multi-level mining, which mini-support (minsup) threshold should be used to generate candidate patterns for the lower level? A. 3%
+2. A store had 100,000 total transactions in Q4 2014. 10,000 transactions contained eggs, while 5,000 contained bacon. 2,000 transactions contained both eggs and bacon. Which of the following choices for the value of ε is the smallest such that {eggs, bacon} is considered a negative pattern under the null-invariant definition? A. .5
+3. Below is a table of transactions. According to the introduced pattern distance measure, what is the distance between pattern "abcd" and pattern "acde"? A. .25
+4. Given the itemsets in table 1, which of the following patterns are in the δ-cluster containing the pattern {A, C, E, S} for δ = 0.0001? A. {F,A,C,E,S}
+
+
+
+
+
+
+
+
