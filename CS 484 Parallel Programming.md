@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-01-30T00:49:44.948Z'
+modified: '2020-02-04T04:28:04.240Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -63,6 +63,29 @@ How many load operations happen in each iteration of the following loop: Not 4,5
 How many cache misses will result from the following code? Assume that N is a multiple of the cache line size w, that the cache is a fully associative LRU cache of size N*w, and that both arrays’ initial addresses are at the start of a cache line. = N^2/w + N/w
 
 Which of the following has better cache performance? Assume that the cache is a fully associative LRU cache of size greater than N*w (where w is the number of words per cache line) and arrays are stored in row major order. i,j
+
+
+# Week 3
+
+- 3.1.1 Vectorization
+  - "Vectorization" (simplified) is the process of rewriting a loop so that instead of processing a single element of an array N times, it processes (say) 4 elements of the array simultaneously N/4 times.
+  - Maybe computations are the same. 
+  - Create a vector of flooting point units. Cheap, less than 1 square mm on the chip. 
+  - The compiler vectorizes code most of the time. 
+  - Most compilers create a report. 
+  - Get feedback from compiler on why some functions didn't vectorize. 
+
+- 3.1.2 Tools
+  - Performance Counters: PAPI
+  - Used for CPU designers but opened for developers. 
+  - Cache hit ratio and similar performance metrics. 
+  - (Just) Timer to time things? Make sure it's low overhead. 
+  
+- 3.1.3 gprof
+  - Profiling = Collect data on execution characteristics. 
+  - Get metrics about program execution like RAM, loops, timings, function calls, and more. 
+  - 
+
 
 
 
