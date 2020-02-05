@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-02-03T04:27:51.859Z'
+modified: '2020-02-05T03:59:13.995Z'
 ---
 
 # CS 412: Data Mining
@@ -91,6 +91,34 @@ Closet+
 2. A store had 100,000 total transactions in Q4 2014. 10,000 transactions contained eggs, while 5,000 contained bacon. 2,000 transactions contained both eggs and bacon. Which of the following choices for the value of ε is the smallest such that {eggs, bacon} is considered a negative pattern under the null-invariant definition? A. .5
 3. Below is a table of transactions. According to the introduced pattern distance measure, what is the distance between pattern "abcd" and pattern "acde"? A. .25
 4. Given the itemsets in table 1, which of the following patterns are in the δ-cluster containing the pattern {A, C, E, S} for δ = 0.0001? A. {F,A,C,E,S}
+
+## Week 3
+- 5.1. Sequential Pattern and Sequential Pattern Mining
+  - Shopping sequences
+  - time series databases
+  - weblog click streams
+  - Sequential pattern mining: Give a set of sequences, find the complete set of frequent subsequences. 
+  - Gapped: Gaps allowed
+  - non-gapped: No gaps allowed
+  
+- 5.2. GSP: Apriori-Based Sequential Pattern Mining
+  - Get all candidates then count support for each, remove those with lower min-support. 
+
+- 5.3. SPADE – Sequential Pattern Mining in Vertical Data Format
+  - Similar to vertical format
+
+- 5.4. PrefixSpan – Sequential Pattern Mining by Pattern-Growth
+  - Prefix: Anything in front
+  - Suffix: Anything after the prexi
+  - Major cost of PrefixSpan: Constructing projected DBs. 
+  
+- 5.5. CloSpan – Mining Closed Sequential Patterns
+  - A closed sequential pattern: There exists no superpatterns. 
+  - Why mine for closed sequential patterns? 
+  - Explore backward subpattern and backward superpattern for pruning redundant search. 
+  - 
+
+
 
 
 
