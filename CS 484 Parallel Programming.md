@@ -87,6 +87,26 @@ Which of the following has better cache performance? Assume that the cache is a 
   - 
 
 
+- 3.2.1 Shared Memory Multiprocessors
+  - Shared Memory multiprocessor and caches
+  - CPUs share memory (DRAM)
+  - Cache controllers know which data is used by each CPU. 
+  - Cache controllers watch every transaction on the bus. 
+  - MSI protocol. 
+  - Cache traffic "serving" latest version of cache can be bottloneck
+  - Data written by one core and used by another causes cache traffic. 
+ 
+- 3.2.2 Shared Address Space Programming: Basics
+  - A process is a programming action. It has an address space in virtual memory. 
+  - VM has a heap, stack, and grobal variables. 
+  - With two cores, there a two caches. It's like the Node event loop. 
+  - Processes alternate between CPUs. 
+  - Each progress contains multiple threads
+  - Each thread has their own stack but same address space (VM)
+  - Threads should run on one fixed core. 
+  - Hyperthreading. Each core can be seem as two. 
+  - Memory: L1 cache private to core or two, L2 may be private or shared, L3 shared across all processors. 
+  - One memory controller per chip. 
 
 
 
