@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-02-05T03:59:13.995Z'
+modified: '2020-02-08T04:19:00.998Z'
 ---
 
 # CS 412: Data Mining
@@ -116,8 +116,64 @@ Closet+
   - A closed sequential pattern: There exists no superpatterns. 
   - Why mine for closed sequential patterns? 
   - Explore backward subpattern and backward superpattern for pruning redundant search. 
-  - 
 
+- 6.1. Graph Pattern and Graph Pattern Mining
+  - Gene networks, protein network
+  - Social networks, web communities 
+  - Computer networks
+  - Web graphs
+
+- 6.2. Apriori-Based Graph Pattern Mining Methods
+  - Anti-monotonicity: A size k subgraph is frequent if and only if all of its subgraphs are frequent. 
+  - Mining process: Candidate-generation -> 
+  - Breadth-search: Apriori joining two size-k graphs. 
+  - AGM
+  - FSG 
+  
+- 6.3. gSpan: A Pattern-Growth-Based Method
+  - Pattern growth approach 
+  - Depth-first growth of subgraphs from k-edge to k+1 edge then k+2 subgraphs. 
+  - Major challange: Generating lots of duplicates
+  - GSpan algo, right most path extension is subgraph pattern growth. 
+- 6.4. CloseGraph: Mining Closed Graph Patterns
+  -  A graph g is closed in a database if there exists no proper supergraph of g that has the same support as g. A closed graph pattern mining algorithm, CloseGraph, is developed by exploring several interesting pruning methods. Our performance study shows that CloseGraph not only dramatically reduces unnecessary subgraphs to be generated but also substantially increases the efficiency of mining, especially in the presence of large graph patterns.
+
+- 6.5. SpiderMine: Mining Top-L Large Structural Patterns in a Single Network
+  - Large patterns are informative to characterize a large network
+  - Large patterns are compose of smaller ones (spiders)
+  - SpiderMing algo:
+
+- 6.6. Graph Pattern Mining Application I: Graph Indexing
+  - Graph Index: Find all the graphs in a graph DB containing a given query graph. 
+  - Only graph (c) contains Q
+  - Path indices
+
+- 6.7. Graph Pattern Mining Application II: Graph Similarity Search
+  - Find graphs in a graph DB containing substructures similar to a given query graph. 
+  - Feature based similarity search
+
+- Summary:
+  - Apriori based graph pattern mining methods
+  - gSpan using growth based methods
+  - CloseGraph for mining closed graph patterns
+  - SpiderMine for mining top k large structural patterns in a single network
+  - Applications: Graph indexing and grapt similarity search
+  
+
+- 7.1 Pattern Discovery for Software Bug Mining
+  - Static bug detection. 
+  - Why pattern mining? Code or running sequences contain hidden patterns. 
+  - Mining rules from source code
+    - Bugs as deviant behaviour: Static analysis
+    - Mining programming rules
+    - Mining function precedence protocols. 
+  - Mining for copy and paste bugs
+    - 12% linux bugs
+    - 19% in windows system
+  - Mine "forget-to-change" bugs by sequential pattern mining. 
+  - Done by building a sequence database from source code. 
+  - CP-Miner for example. 
+  - 
 
 
 

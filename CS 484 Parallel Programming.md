@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-04T04:28:04.240Z'
+modified: '2020-02-10T03:30:23.207Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -108,7 +108,20 @@ Which of the following has better cache performance? Assume that the cache is a 
   - Memory: L1 cache private to core or two, L2 may be private or shared, L3 shared across all processors. 
   - One memory controller per chip. 
 
+- 3.2.4 OpenMP: History and Parallel Loops
+  - Created in 1997
+  - User decides what to execute in parallel. 
+  - OpenMP pragma always begin with `omp`
+  - It provies feedback but programmer controls it. 
+  - Must compile with OpenMP options
+  - `-fopenmp` for gcc oro `-openmp` for intel. 
 
+- 3.2.5 OpenMP: History and Parallel Loops (Part 2)
+  - How to decide if a loop is parallel? Basic rule. Will the results always be the same when running in one process/thread? 
+  - Floating point issues. Adding numbers in different order may give you slightly different rusults. This is important when asking when a loop can be parallelized. 
+
+- 3.2.6 OpenMP: History and Parallel Loops (Part 3)
+  - 
 
 
 
