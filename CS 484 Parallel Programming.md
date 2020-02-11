@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-10T03:30:23.207Z'
+modified: '2020-02-11T04:22:01.054Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -121,9 +121,60 @@ Which of the following has better cache performance? Assume that the cache is a 
   - Floating point issues. Adding numbers in different order may give you slightly different rusults. This is important when asking when a loop can be parallelized. 
 
 - 3.2.6 OpenMP: History and Parallel Loops (Part 3)
+  - Written program that as 99% parallel is a bad idea. Hard to debug. Make sure it's always 100% parallel friendly. 
+  - How to know if a loop is parallel: 
+
+
+# Week 4
+
+- 4.1.1 Open MP: Basics of Parallel For
+  - OpenMP directives are expressed as pragmas.
+  - Parallel for Construct to specify a loop can run in parallel
+  - `daxpy` 
+  - Execution: master thread enters saxpy function
+    - Master thread creates worker threads and makes a team to execute code. 
+  - Number of threads can be controlled. Usually threads = number of cores. 
+  - OMP_NUM_THREADS for env var and `omp_set_num_threads()` function which overrides env var. 
+  - Loop scheduling: Determines which iterations run in which thread. Can be controlled. 
+  
+- 4.1.2 OpenMP: Enabling Parallelization
+  - Each thread has own copy of private variables
+  - master thread doesn't have access to the private variable after loop terminates. Hard to know what to keep. 
+  - firtprivate: list of variables to keep by master thread. First copy.
+  - lastprivate: keep last iteration variables. 
+  
+- 4.1.2 OpenMP: Enabling Parallelization
+  - Each thread has it's own stack. We can create variables for each parallel execution in that. 
+  - `private` can be used to declare a list of private variables for each thread. `temp` example. 
+  - Stack variables are thread private. 
+  - Each 
+
+- 4.1.4 OpenMP: Enabling Parallelization (Part 2)
+  - Sum over an array. 
+  - Not parallel but maybe it can? 
+  - It can with `reduction`. Adds to sum then master thread adds all values at end. 
+  - `#pragma omp parallel for reduction(+:sum)`
+  - Data sharing options:
+    - private
+    - shared
+    - default: private|shared|none
+    - reduction
+    - firstprivate
+    - lastprivate
+
+- 4.1.5 Restructuring for Parallelization
+  - Several methods like restructuring into multiple loop or simple algebra. 
+
+- 4.2.1 Loop Schedules
+  - Default assigns loops to any thread
+  - Assignment can be controlled with a schedule. 
+  - Dynamic schedule
+  - Idea: every time a thread goes to ask for work, it is given a chunk of iterations
+  - `schedule` class. `schedule (kind)`. Kind = static divided evenly, static chunk, dynamic chunk divided into chunks RR fashion, guided size decreases exp from an impl dependant value to chunk.
+  - Static has low overhead, better spatial locality. 
+  - Dynamic will balance load well but high overhead to sync. Spatial location is destroyed
+  - `pragma omp parallel for schedule(dynamic, 16`
   - 
-
-
 
 
 
