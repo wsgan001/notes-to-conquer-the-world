@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-11T04:22:01.054Z'
+modified: '2020-02-11T04:53:20.952Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -174,6 +174,11 @@ Which of the following has better cache performance? Assume that the cache is a 
   - Static has low overhead, better spatial locality. 
   - Dynamic will balance load well but high overhead to sync. Spatial location is destroyed
   - `pragma omp parallel for schedule(dynamic, 16`
+  
+- 4.2.2 Beyond Loops: The Parallel Construct
+  - `parallel` directive allows programmer to say what each thread does. 
+  - `#pragma omp parallel [clause]`
+  - Num of threads can be changed
   - 
 
 
