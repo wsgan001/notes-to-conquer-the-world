@@ -2,13 +2,14 @@
 tags: [ml, school, work]
 title: Bobby Tables ML/DS Work
 created: '2020-01-29T17:52:51.290Z'
-modified: '2020-01-31T16:09:57.247Z'
+modified: '2020-02-05T17:30:32.846Z'
 ---
 
 # Bobby Tables ML/DS Work
 
 
 ## Documents and Resources
+
 
 ---
 
@@ -18,7 +19,11 @@ modified: '2020-01-31T16:09:57.247Z'
 - Daily vs Weekly?
 - Site activity? 
 - Half life of email?
+- SKU (later, since comms doesn't own)
 - Start with Email since that's more personal and disruptive? 
+
+Questions: 
+- Replicating data and measuring quality. 
 
 Todo: 
 - Athena
@@ -26,6 +31,20 @@ Todo:
 - Create repo and docs for data and experiments 
 - Share repo with Levi 
 
+## Feb 4th 2020
 
-## 
+First optimize email opens (over a week)
+- Platform activity is secondary
+- We do have open rates (mandril webhook)
+- First, of the features above, what relates with open rates?
 
+Let's start feature list (of what comms owns vs doesn't)
+
+Todo: 
+- Create local Jupyter hub env with Athena, Docker, and other tools to work on experiments locally. 
+
+## Feb 5th, 2020
+What metrics do we focus on? Click and open, directly tied to emails we send. The content/subject is still relevant but more for priority of email. 
+
+Inputs/Features:
+-  TBD
