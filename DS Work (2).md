@@ -2,7 +2,7 @@
 tags: [ml, school, work]
 title: Bobby Tables ML/DS Work
 created: '2020-01-29T17:52:51.290Z'
-modified: '2020-02-05T17:30:32.846Z'
+modified: '2020-02-11T21:01:01.741Z'
 ---
 
 # Bobby Tables ML/DS Work
@@ -48,3 +48,15 @@ What metrics do we focus on? Click and open, directly tied to emails we send. Th
 
 Inputs/Features:
 -  TBD
+
+## Feb 11, 2020
+- Weekly vs Daily vs Monthly? 
+- Questions: 
+  - Average number of product emails received per week and month. Also by account age. 
+  - Open rates for different categories. 
+  - Distributions for all users. 
+  - 
+
+
+
+
