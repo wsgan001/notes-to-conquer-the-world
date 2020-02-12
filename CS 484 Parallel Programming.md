@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-11T04:53:20.952Z'
+modified: '2020-02-12T03:49:45.866Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -179,7 +179,11 @@ Which of the following has better cache performance? Assume that the cache is a 
   - `parallel` directive allows programmer to say what each thread does. 
   - `#pragma omp parallel [clause]`
   - Num of threads can be changed
+  - Code with `parallel` is much longer and complicated but gives programmer more control. 
+  
+- 4.2.4 Beyond Loops: The Parallel Construct (Part 3)
   - 
+
 
 
 
