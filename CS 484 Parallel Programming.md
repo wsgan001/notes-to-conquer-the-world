@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-12T03:49:45.866Z'
+modified: '2020-02-18T04:53:19.867Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -183,6 +183,36 @@ Which of the following has better cache performance? Assume that the cache is a 
   
 - 4.2.4 Beyond Loops: The Parallel Construct (Part 3)
   - 
+
+
+# Week 5
+- 5.1.1 Synchronization Constructs: Critical, Atomic, and Locks
+  - Different threads need to coordinate with each other in a parallel program 
+  - Types: 
+    - Mutual exclusion: Shared data may result in data inconsistency
+    - Event Synchronization: Code sections executed by different threads need to be sequenced in some particular order.  
+  - Critical section: `#pragma omp critical`. No other thread is allowed to execute any code inside any critical section. 
+    - Threads are made to wait if they encouter this directive. 
+    - Can be named and it means restriction applies only to those sections that share the name. 
+    - Unnamed critical sections are global lock.
+    -  
+- 5.1.2 Synchronization Constructs: Critical, Atomic, and Locks II
+  - Critical sections are expensive. 
+  - There are many variants of atomic directives
+  - Atomic `capture` clause. Atomically change a variable and captue it's old or new value into another variable.  
+  - Lock routines: Much lower level. It's like a note, telling everyone you are using the room. Lock threads. 
+  - Library locks: Very flexible, no restrictions on where they can be placed. 
+  - Deadlocks: A bunch of threads are waiting on each other in a circular fashion. 
+
+- 5.1.3 Case Study: Finding Primes
+  - Find the first million prime numbers
+
+- 5.1.4 Additional Coordination Constructs
+  - Sections: Provide another way of creating a team of threads. 
+  - barrier: make everyone wait. This can be thought of as an event synch construct. 
+  - master: code that is only to be executed by master thread.
+  - single: similar to master but can be executed by any single thread. 
+  
 
 
 
