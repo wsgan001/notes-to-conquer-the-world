@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-02-08T04:19:00.998Z'
+modified: '2020-02-15T05:05:27.936Z'
 ---
 
 # CS 412: Data Mining
@@ -176,6 +176,70 @@ Closet+
   - 
 
 
+## Week 4
+- 8.1. Why Constraint-Based Mining
+  - 
+  - Classification, clustering, outlier?
+  - SQL-like queries
+  - Level types
+  - Rules. 
+
+- 8.2. Different Kinds of Constraints: Different Pruning Strategies
+  - Pattern space pruning: 
+  - data space pruning
+
+- 8.3. Constrained Mining With Pattern Anti-Monotonicity
+  - If itemset S violates contraint C, do does any superset. Mining of itemset S can be terminated.
+
+- 8.4. Constrained Mining with Pattern Monotonicity
+  - If itemset S satifies the contraint c, so does any of it's superset. 
+
+- 8.5. Constrained Mining with Data Anti-Monotonicity
+  - In the mining process, if a data entry cannot satisfy a pattern p under c, t cannot satisfy p's superset either. 
+- 8.6. Constrained Mining with Succinct Constraints
+  - Succinctness: if the contraint c can be enforced by directly manipulating the data. 
+- 8.7. Constrained Mining with Convertible Constraints
+  - Convert tough contraints into (anti-)monotone by proper ordering of items in transaction.
+
+- 8.8. Handling Multiple Constraints
+  - Beneficial to use multiple contraints in pattern mining. 
+  - Different contraints may require potentially conflicting item ordering. 
+  
+- 8.9. Constraint-Based Sequential-Pattern Mining
+  - Similar with contraint-based itemset mining
+
+
+- 9.1. From Frequent Pattern Mining to Phrase Mining
+  - Mining for semantically meaningful phrases
+
+- 9.2. Previous Phrase Mining Methods
+  - Originated from Chunking
+  - Model is as a sequence labeling problem. 
+  - Requires annotation, high cost and doesn't transfer. 
+  - Unsupervised phrase mining
+    - Topic modeling: Represents documents by multiple topics in diff proportions
+    - No prior annotation 
+  - Statistical topic models: LDA - Latent Dirichlet Allocation
+  - BoW models
+  - Simultaneously inferring phrases
+    - Bigram Topic model: Prob generative model that contains on previous word and topic when drawing next word. 
+    - Topic N-Grams 
+    - Slow inference and complex
+  - Post Topic-Modeling Phrase
+    - TurboTopics: Phrase construction as a post processing step to LDA
+  - KERT: Phrase construction as a post processing step to LDA
+    - Performs Frequest pattern mining to extract 
+
+- 9.3. ToPMine: Phrase Mining without Training Data
+  - First phrase mining, doc segmentation, and phrase ranking
+  - Topic model inference with phrase contraint
+  - Phrase mining:  
+  - Collocating mining: A seq of words that occur more frequesnt than expectex. 
+
+- 9.4. SegPhrase: Phrase Mining with Tiny Training Sets
+  - A small set of training data may enhance quality of phrase mining. 
+  - ClassPhrase: Frequent Pattern minining, feature extraction, classification
+  - SegPhrase
 
 
 

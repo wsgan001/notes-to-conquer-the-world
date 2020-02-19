@@ -2,7 +2,7 @@
 tags: [ml, school, work]
 title: Bobby Tables ML/DS Work
 created: '2020-01-29T17:52:51.290Z'
-modified: '2020-02-11T21:01:01.741Z'
+modified: '2020-02-18T17:00:03.029Z'
 ---
 
 # Bobby Tables ML/DS Work
@@ -10,6 +10,11 @@ modified: '2020-02-11T21:01:01.741Z'
 
 ## Documents and Resources
 
+## Data sources to replicate
+- Course history
+- Profile
+- Logins
+- Account info
 
 ---
 
@@ -57,6 +62,17 @@ Inputs/Features:
   - Distributions for all users. 
   - 
 
+## Feb 14, 2020
+- Most users are gettting 1
+- For those what are getting a lot? Like 50 or more. What's their activity level?
+- Open rate over sent num
+- Split by low and hight volume cohorts. head and tail
+- 
 
 
+## Feb 18th, 2020
+- What do we focus on if most users don't get more than 1 email? 
+- How do we deal with outliers? 
+- Look into top comms ids.
+- How many users are getting more than 10 or more emails? 
 
