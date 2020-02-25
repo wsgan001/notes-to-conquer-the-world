@@ -2,7 +2,7 @@
 tags: [ml, school, work]
 title: Bobby Tables ML/DS Work
 created: '2020-01-29T17:52:51.290Z'
-modified: '2020-02-18T17:00:03.029Z'
+modified: '2020-02-21T21:19:08.421Z'
 ---
 
 # Bobby Tables ML/DS Work
@@ -15,6 +15,7 @@ modified: '2020-02-18T17:00:03.029Z'
 - Profile
 - Logins
 - Account info
+- Interests
 
 ---
 
@@ -75,4 +76,10 @@ Inputs/Features:
 - How do we deal with outliers? 
 - Look into top comms ids.
 - How many users are getting more than 10 or more emails? 
+
+## Feb 21, 2020
+- Users are getting just 1 email on avg. 
+- Do we focus on just short burts? 
+- Check for users between 1 and 6 count over time
+- Do users with 1 notifications have activity? courses? login? 
 

@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-18T04:53:19.867Z'
+modified: '2020-02-19T19:59:42.432Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -212,6 +212,28 @@ Which of the following has better cache performance? Assume that the cache is a 
   - barrier: make everyone wait. This can be thought of as an event synch construct. 
   - master: code that is only to be executed by master thread.
   - single: similar to master but can be executed by any single thread. 
+  
+- 5.1.5 Example: Prefix Sum - Recursive Doubling with Barriers
+  - Prefix sum problem. 
+  - Sequantial algo is slow
+  - Recursive dubling works but not perfect. 
+
+- 5.1.7 More Synchronization
+  - Simple processors are easier to work with but slow. 
+  - Computer architects added caches 
+  - Also added registers. This improved speed. 
+  - Variables can be stored in registers. 
+  - Sequential consistency: A desired property of parallel programming systems. The execution of a parallel program should be same as the sequential one. 
+  - How to deal with lack of sequential consistency? 
+    - Give up resister and write buffers? No way!
+    - OpenMP provides a way to flush data. 
+  - `flush` is especially useful or point-to-point synchronization. For one thread to signal to another that some event or data is ready. 
+  
+- 5.1.8 More Synchronization II
+  - The ordered clause: Makes the block of code wait for previous iteration to finish its ordered block. 
+  - `#pragma omp parallel for ordered`
+  - depends clause with ordered directive: Allows you to specify dependence in a more general precise way. 
+  - the depends block of code has to wait for the source to complete before it continues. 
   
 
 

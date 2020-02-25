@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-02-15T05:05:27.936Z'
+modified: '2020-02-24T20:01:14.718Z'
 ---
 
 # CS 412: Data Mining
@@ -240,6 +240,50 @@ Closet+
   - A small set of training data may enhance quality of phrase mining. 
   - ClassPhrase: Frequent Pattern minining, feature extraction, classification
   - SegPhrase
+
+
+## Week 6
+- Course Part 2 Overview: Cluster Analysis
+  - Helps partion massive data into groups based on it's features. 
+  - Help data mining processes such as pattern discovery, classification, and outliers. 
+  - Applications: Summarization, compression, reduction
+  - Data Mining book: Chapter 2 and 10 https://d396qusza40orc.cloudfront.net/clusteranalysis/Han_Data%20Mining%203e_Chapters%202%2C10%2C11%2C13.pdf
+
+- 1.1. What Is Cluster Analysis?
+  - Cluster? Collection of data objects which are similar or dissimilar. 
+  - Cluster Analysis/Data Segmentation: Partitioning data points into set of similar groups.
+
+- 1.2. Applications of Cluster Analysis
+  - Lots of them. 
+  - Preprossesing for other tasks. 
+  - Outlier detection 
+  - Data summarization, compression, 
+  - Rec systems
+  - Help with supervised tasks as well. 
+
+- 1.3. Requirements and Challenges
+  - Partitioning criteria: Single vs hierarchical partitioning.
+  - Separation of clusters: Exclusive (one cluster) or non-exclusive (one or more clusters)
+  - Similarity Measure: Distance based vs connectivity-based 
+  - Clustering space: Full space(low dim) vs subspaces (high dim)
+  - Quality: Different data types and noisy data
+  - Scalability: Clustering all or just a sample. High dimensional data. 
+  - Constraint based: Give user preferences or contraints or user queries. 
+
+- 1.4. A Multi-Dimensional Categorization
+  - Techniques: Distance vs density based
+  - Data type centered: numberical data, text, time, or any othere data type. 
+  - Additional insight-centered
+
+- 1.5. An Overview of Typical Clustering Methodologies
+  - Distance based: 
+    - paritioning: k-means, k-median, k-medoids
+    - Hierarchical algo: agglomerative vs divisive methods
+  - Density-based and grid-based methods
+    - Density based: https://cse.buffalo.edu/~jing/cse601/fa12/materials/clustering_density.pdf
+    - Grid based: 
+
+
 
 
 
