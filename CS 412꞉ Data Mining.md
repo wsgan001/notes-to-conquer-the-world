@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-02-24T20:01:14.718Z'
+modified: '2020-02-25T05:09:07.493Z'
 ---
 
 # CS 412: Data Mining
@@ -282,7 +282,48 @@ Closet+
   - Density-based and grid-based methods
     - Density based: https://cse.buffalo.edu/~jing/cse601/fa12/materials/clustering_density.pdf
     - Grid based: 
+  - Probabilistic and generative models: Mixter of Gaussians, EM. 
+  - High-dim clustering: 
+    - Subspace clustering. Find cluster on various subspaces. Bottom up or top down. 
+    - Dim reduction. 
+    - PLSI then LDA for text data. Each topic is a cluster. 
+  - NMF. Non negative matrix factorization. 
 
+- 1.6. An Overview of Clustering Different Types of Data
+  - Numerical: Most algo designed for this
+  - Categorical data: Discrete
+  - Text data: High dim, sparse. Combinations of k-means. 
+  - Multimedia: images, audio, video. 
+  - Time series: Temporally dependent
+  - Sequence: weblogs, bio sequences
+  - Stream data: real-time 
+  - Graphs: Similar nodes and edges. Good for generative models, combinatorial algo, spectral methods. 
+
+- 1.7. An Overview of User Insights and Clustering
+  - Visual insights: Really helpful
+
+- 2.1. Basic Concepts: Measuring Similarity between Objects
+  - High inter-class similarity: Cohesive
+  - Low inter class similarity: Distintive between clusters
+  - Similarity measure or function
+    - Measure how two data objects are alike. 0 to 1. 
+  - Dissimilarity (distance) measure
+    - Inverse of similarity in a way. The lower then better. 
+    - Min = 0
+  - Proximity. Similarity or Dissimilarity
+
+- 2.2. Distance on Numeric Data Minkowski Distance
+  - Data matrix. 
+  - Dissimilarity matrix: Euclidean distance
+  - Minkowski Distance
+  - if p = 1 then we use L1 Norm or Manhattan distance 
+  - if p = 2 then we use the l2 norm euclidean distance
+  - if p goes to infinity then use supremum distance
+  - 
+
+- 2.3. Proximity Measure for Symetric vs Asymmetric Binary Variables
+  - Symetric = chance they appear/not 
+  - Asymmetric = they both appear
 
 
 
