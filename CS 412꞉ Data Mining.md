@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-02-25T05:09:07.493Z'
+modified: '2020-02-26T06:13:34.425Z'
 ---
 
 # CS 412: Data Mining
@@ -316,7 +316,7 @@ Closet+
   - Data matrix. 
   - Dissimilarity matrix: Euclidean distance
   - Minkowski Distance
-  - if p = 1 then we use L1 Norm or Manhattan distance 
+  - if p = 1 then we use L1 Norm or Manhattan distance: In a plane with p1 at (x1, y1) and p2 at (x2, y2), it is |x1 - x2| + |y1 - y2|.
   - if p = 2 then we use the l2 norm euclidean distance
   - if p goes to infinity then use supremum distance
   - 
@@ -325,7 +325,37 @@ Closet+
   - Symetric = chance they appear/not 
   - Asymmetric = they both appear
 
+- 2.4. Distance between Categorical Attributes, Ordinal Attributes, and Mixed Types
+  - AKA nominal attributes
+  - Example: Color, profession, gender
+  - Method: Simple matching or convert to binary values
+  - Ordinal: Can be discrete or continuous values. Can be treated like interval-scaled. Example: 0,1/3,2/3,1
+  - Attribute mixed types: 
 
+- 2.4 Office Hour: Running Sample on How to Calculate Distance between Categorical Data
+  - Using simple match formula. d = (m-p)/m. 
+    - m is the number of attributes. p is the number of exactly matches attributes. 
+  - Convert into binary representation. Sort of like one-hot encoding. 
+    - For symmetric values: count matching columns, including 0s. 
+    - For asymmetric values: ignore 0s, count matching values. 
+    - Same fomula: d = (m-p)/m. 
+
+- 2.5. Proximity Measure between Two Vectors: Cosine Similarity
+  - Doc can be represented by a bag of terms or long vector. Each attribute recording freq of a term. 
+  - Formula
+
+- 2.6. Correlation Measures between Two Variables: Covariance and Correlation Coefficient
+  - Variance: measure how much value of x deviates from the mean or expected of x. 
+    - Formula: expected value of the square deviation from the mean. 
+  - Covariance: how 2 variables corelate
+    - positve covariance: if > 0
+    - negative: if < 0
+    - independence: If x1 and x2 are independent. 
+    - range from -1 to 1.
+    - Jaccard Index: https://www.statisticshowto.datasciencecentral.com/jaccard-index/
+    - https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/#hand
+
+  
 
 
 

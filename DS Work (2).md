@@ -2,7 +2,7 @@
 tags: [ml, school, work]
 title: Bobby Tables ML/DS Work
 created: '2020-01-29T17:52:51.290Z'
-modified: '2020-02-21T21:19:08.421Z'
+modified: '2020-02-26T17:31:01.419Z'
 ---
 
 # Bobby Tables ML/DS Work
@@ -83,3 +83,9 @@ Inputs/Features:
 - Check for users between 1 and 6 count over time
 - Do users with 1 notifications have activity? courses? login? 
 
+
+## Feb 26, 2020
+- Account for account age. What happens during first 3 or so months? Does it drop off? 
+- At what point do we start product emails? 12 weeks? 
+- How can we use the infered interests model? 
+- 
