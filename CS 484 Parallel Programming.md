@@ -236,7 +236,10 @@ Which of the following has better cache performance? Assume that the cache is a 
   - the depends block of code has to wait for the source to complete before it continues. 
   
 
-
+- 6.1.1 Performance Issues
+  - Using OpenMP is not that simple. Code needs to be restructured. 
+  - Jacobi Relaxation algorithms 
+  - 
 
 
 
