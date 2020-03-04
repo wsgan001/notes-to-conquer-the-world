@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-03-03T15:34:22.235Z'
+modified: '2020-03-04T05:09:17.304Z'
 ---
 
 # CS 412: Data Mining
@@ -369,9 +369,56 @@ Closet+
   - sensitive to noisy data and outliers. 
 
 - 3.2. K-Means Clustering Method
+
+- 3.3. Initialization of K-Means Clustering
+  - Different init may give different results. 
+  - Original proposal, select k randomly. 
+  - Try different values. 
+  - K-mean++: first centroid is random, then pick the next one that is farthest, continue until k centroids. 
+
+- 3.4. The K-Medoids Clustering Method
+  - k-means algo is sensitive to outliers. 
+  - k-medoids. use mediods instead of mean values. 
+  - K-means attempts to minimize the total squared error, while k-medoids minimizes the sum of dissimilarities between points labeled to be in a cluster and a point designated as the center of that cluster. 
+
+- 3.5. The K-Medians and K-Modes Clustering Methods
+  - Medians are less sensitive to outliers than means. 
+  - Use median instead of mean and use l1 norm distance measure. 
+  - K-modes: handles categorical data. 
+  - k-prototype: for mixture of categorical and numerical data
+
+- 3.6. Kernel K-Means Clustering
+  - Kernel k-means can be used to detect non-convex clusters, non linearly separable. 
+  - Map data into hight dimentions and then perform k-means. 
   - 
 
+- 4.1. Hierarchical Clustering Methods
+  - Cluster hierarchy
+  - K is not required. 
+  - https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec
 
+- 4.2. Agglomerative Clustering Algorithms
+  - Agglomerative, buttom up. 
+  - Single link: nearest neighbor. 
+  - Complete link: diameter.
 
+- 4.3. Divisive Clustering Algorithms
+  - Start from big cluster and try to split them. 
+  - DIANA
+  - Inverse of AGNES.
+  - Top down. 
+    - start at root with all points in 1 cluster
+    - recursively split cluster
+  - More efficient than agglomerative
+
+- 4.4. Extensions to Hierarchical Clustering
+  - Weaknesses of hierarchical clustering
+    - can never undo what was split
+    - doesn't scale
+      - O(n) squared
+
+- 4.5. BIRCH: A Micro-Clustering-Based Approach
+  - multiphase clustering
+  - 
 
 
