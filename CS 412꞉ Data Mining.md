@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-02-26T06:13:34.425Z'
+modified: '2020-03-03T15:34:22.235Z'
 ---
 
 # CS 412: Data Mining
@@ -356,7 +356,20 @@ Closet+
     - https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/#hand
 
   
+# Week 7
+- 3.1. Partitioning-Based Clustering Methods
+  - Partitioning: disconvering groups in data. 
+  - k-partitioning: partitioning a dataset d of n objects into set of K clusters. 
+  - SSE is a typical objective functions. 
 
+- 3.2. K-Means Clustering Method
+  - Introduced 67 or 57. 
+  - Efficiency: O(tKn). number of objects, k # of clusters, t number of iterations. 
+  - k is given in advance. 
+  - sensitive to noisy data and outliers. 
+
+- 3.2. K-Means Clustering Method
+  - 
 
 
 
