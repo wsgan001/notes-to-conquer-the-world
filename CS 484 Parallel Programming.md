@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-19T19:59:42.432Z'
+modified: '2020-02-29T04:47:56.113Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -239,7 +239,20 @@ Which of the following has better cache performance? Assume that the cache is a 
 - 6.1.1 Performance Issues
   - Using OpenMP is not that simple. Code needs to be restructured. 
   - Jacobi Relaxation algorithms 
-  - 
 
+- 6.1.3: False Sharing
+  - Maximum index using private vars. First find the max id in parallel then find the highest in each. 
+  - Trashing happens when threads want to write to the same cache line. False sharing. Padding is a solution, use a key valud array. 
+  - False sharing happens when two or more threads access the same cache line for writes. Over a commom time interval. Solved with padding. 
+
+- 6.2.1 Nesting, Collapse
+  - Using `collapse` for nested loops. 
+
+- 6.2.2 Tasks, depends
+  - `task` enqueues a task and executes it when it can. 
+  - Execution: deffered or immidiately. 
+  - You can choose priority. 
+  - untied, task created can be executed by different threads over a period of time. 
+  - 
 
 
