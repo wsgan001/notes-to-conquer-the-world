@@ -2,11 +2,13 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-02-29T04:47:56.113Z'
+modified: '2020-03-09T04:33:43.027Z'
 ---
 
 # CS 484 Parallel Programming 
 
+# Homework
+- MP2 help https://uiuc-mcsds.slack.com/archives/CU0KVABGS/p1582936197043900
 
 # Week 1
 ### Early History of Computers
