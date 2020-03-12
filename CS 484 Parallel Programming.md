@@ -293,4 +293,6 @@ Which of the following has better cache performance? Assume that the cache is a 
     - Collective calls. Global reduction like sum or max. 
 
 - 8.1.5 Basic MPI
+    - Message Passing Interface
+    - Popular due to vendor support. 
     - 
