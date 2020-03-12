@@ -255,6 +255,42 @@ Which of the following has better cache performance? Assume that the cache is a 
   - Execution: deffered or immidiately. 
   - You can choose priority. 
   - untied, task created can be executed by different threads over a period of time. 
-  - 
+ 
+ 
+# Week 8
+- 8.1.1 PThreads
+  - Posix Threads
+  - Available all linux machines. 
+  - Sort of parallel but not. 
+  - Each core may have 2 hardware threads. 
+  - Can have many threads. 
+  - 2k per thread is the best. 
+  - Can run on any core but can be specified. 
+  - OpenMP is simpler and available on many OS. Better for parallel loops
+ 
+- 8.1.2 Basic C++11 Atomics
+  - Sequential consistency: desired property of parallel programming systems. 
+  - Atomics are variables declared as atomic. Ensures accesses to those variables, among themselves, are sequentially consistent. 
+  - Behavior is well-defined regardless of which thread reads to it.
+  
+- 8.1.3 SPSC
+  - Locks are for enforcing mutual exclusion. They are expensive. 
+  - Locks initially wait and then iterate back. It doesn't wait after that when only using a few threads. It doesn't scale. 
+  - Circular queues. 
+  
+- 8.1.4 Message Passing in Distributed Systems
+  - Shared memory systems
+      - Easy to parallelize. Data available nearby. 
+      - Limitations. expensive to build. 
+      - Restricted to certain system 
+  - Distributed memory systems
+    - Locality of data is exposed. Cheat to build. 
+  - Message passing. MPI. 
+    - Each process has it's own data. 
+    - No shared data. 
+    - Processes share data via message passing. send/recv calls. 
+    - Like mail. 
+    - Collective calls. Global reduction like sum or max. 
 
-
+- 8.1.5 Basic MPI
+    - 
