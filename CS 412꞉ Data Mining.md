@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-03-04T05:09:17.304Z'
+modified: '2020-03-13T04:08:20.222Z'
 ---
 
 # CS 412: Data Mining
@@ -420,5 +420,15 @@ Closet+
 - 4.5. BIRCH: A Micro-Clustering-Based Approach
   - multiphase clustering
   - 
+
+# Week 8
+- 4.6. CURE: Clustering Using Well-Scattered Representatives
+  - Represent a cluster using a set of well-scattered representative points. 
+
+- 4.7. CHAMELEON: Graph Partitioning on the KNN Graph of the Data
+  - Measures similarity using dymamic model. 
+  - graph based two phase algo: use a graph algo to cluster objects into a larger number of small subclusters
+  - use an agglomerative hiearchical clustering algo. 
+  
 
 
