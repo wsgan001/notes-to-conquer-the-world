@@ -431,4 +431,26 @@ Closet+
   - use an agglomerative hiearchical clustering algo. 
   
 
+- 5.1. Density-Based and Grid-Based Clustering Methods
+  - Clustering based on density
+  - Features: Arbitrary shapes, handles noise, one scan
 
+- 5.2. DBSCAN: A Density-Based Clustering Algorithm
+  - Captures clusters of arbitrary shape. 
+  - Two params: Eps: Maximum radius of neighborhood. MinPTs: minimum number of points. 
+  - Directly density-reachable
+  - Density reachable. 
+  - Density-connected
+  - DBScan is sensitive to settings of parameters. 
+  
+- 5.3. OPTICS: Ordering Points To Identify Clustering Structure 
+  - Created by same authors as DBSCAN
+
+- 5.4. Grid-Based Clustering Methods
+  - Explore multi-resolution grid data structure in clustering
+  - Features and challenges
+    - Efficiency and scalability. 
+    - Uniform. Hard to handle highly irregular data distributions
+    - Locality: Limited predifined cell sizes
+    - Curse of dimensionality
+   
