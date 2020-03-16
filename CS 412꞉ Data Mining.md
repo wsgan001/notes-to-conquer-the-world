@@ -449,8 +449,21 @@ Closet+
 - 5.4. Grid-Based Clustering Methods
   - Explore multi-resolution grid data structure in clustering
   - Features and challenges
-    - Efficiency and scalability. 
-    - Uniform. Hard to handle highly irregular data distributions
-    - Locality: Limited predifined cell sizes
-    - Curse of dimensionality
+   - Efficiency and scalability. 
+   - Uniform. Hard to handle highly irregular data distributions
+   - Locality: Limited predifined cell sizes
+   - Curse of dimensionality
+
+- 5.5. STING: A Statistical Information Grid Approach
+   - First grid based clustering 
+   - A cell at a high level contains a number of smaller cells of the next lower level. 
+   - Advantages: Query-independent, easy to parallelize, incremental update. Efficient, O(K)
+   - Disadvantages: loss of accuracy in query processing. 
+
+- 5.6. CLIQUE: Grid-Based Subspace Clustering
+   - Density and grid base subspace clustering. 
+   - Advantages: automatically finds subspaces of the highest dim. Insensitive to the order of records and does not presume some cononical data distribution. Scales linearly with size of input. 
+   - Disadvantages: Quality depends on the appropiate choice of the number and width of the partition and grid cells. 
    
+
+
