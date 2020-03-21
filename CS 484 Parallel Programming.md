@@ -2,7 +2,7 @@
 tags: [CS 484 Parallel Programming, school]
 title: CS 484 Parallel Programming
 created: '2020-01-29T17:44:57.790Z'
-modified: '2020-03-09T04:33:43.027Z'
+modified: '2020-03-21T17:19:06.158Z'
 ---
 
 # CS 484 Parallel Programming 
@@ -296,3 +296,8 @@ Which of the following has better cache performance? Assume that the cache is a 
     - Message Passing Interface
     - Popular due to vendor support. 
     - 
+
+
+# Week 10
+- Send/Receive Variants
+  - 

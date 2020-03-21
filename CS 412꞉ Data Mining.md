@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-03-13T04:08:20.222Z'
+modified: '2020-03-20T02:57:04.121Z'
 ---
 
 # CS 412: Data Mining
@@ -422,6 +422,8 @@ Closet+
   - 
 
 # Week 8
+https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec
+
 - 4.6. CURE: Clustering Using Well-Scattered Representatives
   - Represent a cluster using a set of well-scattered representative points. 
 
@@ -465,5 +467,55 @@ Closet+
    - Advantages: automatically finds subspaces of the highest dim. Insensitive to the order of records and does not presume some cononical data distribution. Scales linearly with size of input. 
    - Disadvantages: Quality depends on the appropiate choice of the number and width of the partition and grid cells. 
    
+# Week 9
+- 6.1. Methods for Clustering Validation
+
+- 6.2. Clustering Evaluation Measuring Clustering Quality
+  - Goodness of clustering results
+  - Three types
+  - External: Supervised, not inherent to the dataset. Ground-truth setting. 
+  - Internal: Unsupervised, from data itself. 
+  - Relative: Directly compare different clustering from different param settings using same algo. 
+
+- 6.3. Constraint-Based Clustering
+  - T, ground truth. 
+  - Four criteria
+  - Cluster homogeneity: Purer the better
+  - Cluster completeness: Assign objects to the same category in T to the same cluster
+  - Rag bag better than alien: Putting a heterogeneos object into a pure cluster should be penalized more than putting it intoa rag bag ("other", "misc") cluter. 
+  - Small cluster preservation: Splitting small category into pieces is hardful than splitting bigger clusters. 
+  - Common used external measure: matching based, entropy-based measure, pairwise measures, and correlation measures. 
+
+- 6.4. External Measures 1: Matching-Based Measures
+  - Purity vs Maximum Matching: 
+  - Purity: Quantifies the extent that cluster c contains point only from one ground truth partition. Purity = 1 is perfect. 
+  - https://www.coursera.org/learn/cs-412/lecture/BcYhV/6-4-external-measures-1-matching-based-measures
+  - Maximum matching: only one cluster can match one partition
+  - F-measure: computed by precision and recall. 
+
+- 6.5. External Measure 2: Entropy-Based Measures
+- 6.6. External Measure 3: Pairwise Measures
+  - Jaccard coefficient
+- 6.7. Internal Measures for Clustering Validation
+  - Max intra-cluster compactness and inter-cluster separation
+  - 
+- 6.8. Relative Measures
+  - Directly compare different clusterings. Like those obtained via different setting params. 
+  - Silhoutte coefficient 
+  - 
+- 6.9. Cluster Stability
+  - Clustering objtained from several dataset sampled. 
+  - Example: find a good param values for a given clustering algo.
+  - A boostraping approach to find the best value of k for stability. 
+  - find k, the number of clusters:
+    - Emperical method
+    - Elbow method: Use the turning point int he curve of the sum with respect to # of clusters. 
+    - Cross validation
+
+- 6.10. Clustering Tendency
+  - Whether the data contains inheret grouping structure. 
+  - 
+
+
 
 
