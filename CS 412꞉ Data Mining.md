@@ -2,7 +2,7 @@
 tags: ['CS 412: Introduction to Data Mining', school]
 title: 'CS 412: Data Mining'
 created: '2020-01-29T17:51:52.498Z'
-modified: '2020-03-20T02:57:04.121Z'
+modified: '2020-03-22T03:34:40.801Z'
 ---
 
 # CS 412: Data Mining
@@ -516,6 +516,49 @@ https://towardsdatascience.com/understanding-the-concept-of-hierarchical-cluster
   - Whether the data contains inheret grouping structure. 
   - 
 
+# Week 10
 
+- Send/Receive Variants
+  - Message passing: involves copying data from users data space on the source processors to users data space on the other processor. 
+  - Sends it in packets. 
+  - Messaging protocols: consists of envelope and data. 
+    - Short: message sent with envelope
+    - Eager: data sent assuming destination can store using memory if needed
+    - Rendezvous: header sent first, message sent into destination replies. 
+  - Basic term: Immediate: operations does not wait for completaion. Synchronous: send requires initiation of receive. Buffered: the MPI implementation can use a buffer to copy data quicker. Ready: Correct send requires a mtching receive already be posted. 
+  - MPI_Send: Sends data. May wait for matching receive. Depends on implemenation
+  - MPI_Recv: recieves data
+  - MPI_Ssend: synchronous send. waits for matching receive to start. 
+  - MPI_Rsend: ready send. 
+  - Non blocking: MPI_Isend, MPI_Irsend, MPI_Issend, MPI_Irecv
+  - Persistent communications: MPI_Send_init, MPI_start, MPI_Startall
+  - Testing for messages: 
+    - MPI_probe: blocking test for a message in a specific communicator. 
+    - MPI_Iprobe: nonblocking. 
+  - Buffered communications: User handlers the buffers
+    - MPI_Bsend.
+  - Why so many? Each represents a different tradeoff in ease of use, efficiency, or correctness. 
+  - Smaller sets can provide full functionality. 
+
+- MPI Collectives: Reductions and Broadcast
+  - Everyone within a communicator must make that call before the call can be effected. 
+  - Essentially: a collective call requires coordination among all the processes of a communicator. 
+  - MPI_Barrier: blocks caller until all processes have entered the call. 
+  - MPI_Bcast: sends a message from rank "root" to all processes of the group. 
+  - MPI_Allreduce
+  - MPI_Reduce: Results only done on one processors. 
+
+- More Collectives
+  - MPI_Bcast: 
+  - MPI_Gather: data brought to one process
+  - MPI_Scatter: data sent to many processes 
+  - MPI_Allgather: copies data to all processes
+  - MPI_Alltoall
+  - Also nonblocking modes available. MPI_I**
+
+- MPI: sub-communicators
+  - A communicator Represents a set of processes, and each member process has a rank in that communicator. 
+  - Subcommunicator: splits a communicator. 
+  - Fox algorithm  
 
 
